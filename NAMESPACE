@@ -1,3 +1,0 @@
-export('SelfE')
-
-importFrom('pracma', 'pinv')
