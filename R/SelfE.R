@@ -1,17 +1,14 @@
-# Hello, world!
+# Performs feature/gene selection
 #
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
+# More detailed description
 #
-# You can learn more about package authoring with RStudio at:
+# @param data: Numeric matrix where samples are in row and features are in column.
+# @param k: Number of features to be selected.
 #
-#   http://r-pkgs.had.co.nz/
+# @return Vector containing ID of the features.
 #
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+# @examples
+# GeneID = SelfE(Data, 50)
 
 SelfE <- function(data, k)
 {
