@@ -4,7 +4,7 @@ Priyadarshini Rai, Debarka Sengupta, Angshul Majumdar
 
 ## Description
 
-The first input parameter to SelfE.R is a pre-processed single-cell data matrix, with rows representing cells/samples and columns representing genes/features. The second input parameter 'k' denotes the number of feature(s) user wants to select from the available features. SelfE returns an array of index values corresponding to the selected genes and the length of the array is equal to input parameter 'k'
+The first input parameter to SelfE.R is a pre-processed single-cell data matrix, with rows representing cells/samples and columns representing genes/features. The second input parameter 'k' denotes the number of feature(s) user wants to select from the available features. SelfE returns an array of index values corresponding to the selected genes and the length of the array is equal to input parameter 'k'.
 
 ### Dependencies
 
