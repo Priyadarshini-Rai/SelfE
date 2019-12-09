@@ -21,4 +21,5 @@ Processed_Data = read.table('Single Cell Dataset/PBMC_Data_1019Samples.csv', sep
 Number_of_Features = 50
 
 GeneIDs = SelfE(Processed_Data, Number_of_Features)
+
 SelfE_Data = Processed_Data[, GeneIDs]
