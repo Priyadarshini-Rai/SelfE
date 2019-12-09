@@ -12,5 +12,13 @@ Packages: pracma, pinv.
 
 ### Excecution
 
-To run the SelfE model, run the script SelfE.R and then call the function SelfE using the following the command:
-#### SelfE (SingleCell_Data, Number_of_Features)
+To run the SelfE model use the following the commands:
+
+source(SelfE.R)
+
+Processed_Data = read.table('Single Cell Dataset/PBMC_Data_1019Samples.csv', sep = ',', header = FALSE)
+
+Number_of_Features = 50
+
+GeneIDs = SelfE(Processed_Data, Number_of_Features)
+SelfE_Data = Processed_Data[, GeneIDs]
