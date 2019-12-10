@@ -14,12 +14,26 @@ Packages: pracma, pinv.
 
 To run the SelfE model use the following the commands:
 
+```ruby
 source(SelfE.R)
+```
 
+```
+# Loading data
 Processed_Data = read.table('Single Cell Dataset/PBMC_Data_1019Samples.csv', sep = ',', header = FALSE)
+```
 
+```
+# Number of features user wants to select
 Number_of_Features = 50
+```
 
+```
+# Calling SelfE
 GeneIDs = SelfE(Processed_Data, Number_of_Features)
+```
 
+```
+# Selecting genes from the data
 SelfE_Data = Processed_Data[, GeneIDs]
+```
